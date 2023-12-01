@@ -17,11 +17,9 @@ CREATE TABLE film(
     data_nascita date
 );
 
-DROP TABLE contratto;
+DROP TABLE IF EXISTS contratto;
 CREATE TABLE contratto(
     ID_contratto int not null AUTO_INCREMENT PRIMARY KEY,
-	ID_attore int,
-	ID_film int
-    FOREIGN KEY(ID_attore) REFERENCES attore(ID_attore),
-    FOREIGN KEY(ID_film) REFERENCES film(ID_film)
+	ID_attore int REFERENCES attore(ID_attore),
+	ID_film int REFERENCES film(ID_film)
 );
