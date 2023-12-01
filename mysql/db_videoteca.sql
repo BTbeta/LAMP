@@ -27,4 +27,7 @@ CREATE TABLE contratto(
 SHOW TABLES;
 
 -- Inseriamo un po' di dati nelle tabelle
-
+INSERT INTO attore (nome, cognome, data_nascita)
+VALUES
+    ('io','zio','2005-01-09'),
+    ('cane','pipo','1955-01-09');
