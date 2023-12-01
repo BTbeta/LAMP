@@ -23,3 +23,8 @@ CREATE TABLE contratto(
 	ID_attore int REFERENCES attore(ID_attore),
 	ID_film int REFERENCES film(ID_film)
 );
+
+SHOW TABLES;
+
+-- Inseriamo un po' di dati nelle tabelle
+
